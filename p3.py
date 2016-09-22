@@ -8,4 +8,3 @@ def primefactors(x):
         else:
             loop += 1
     return factorlist
-
