@@ -42,9 +42,9 @@ for i in range(1, 1001):
     length = len(number_string)
     if i < 10:
         name = below_ten(number_string)
-    elif i < 100 >= 10:
+    elif i < 100:
         name = below_hundred(number_string)
-    elif i < 1000 >= 100:
+    elif i < 1000:
         name = below_thousand(number_string)
     else:
         name = 'onethousand'
