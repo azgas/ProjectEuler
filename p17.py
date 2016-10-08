@@ -27,19 +27,11 @@ def below_hundred(number):
 
 
 def below_thousand(number):
-    hundreds = number[0]
-    if hundreds == '1':
-        name = 'onehundred'
-        if number[1] == '0' and number[2] != '0':
-            name += 'and' + below_ten(number[2])
-        elif number[1] != '0':
-            name += 'and' + below_hundred(number[1:])
-    else:
-        name = dictionary[number[0]] + 'hundreds'
-        if number[1] == '0' and number[2] != '0':
-            name += 'and' + below_ten(number[2])
-        elif number[1] != '0':
-            name += 'and' + below_hundred(number[1:])
+    name = dictionary[number[0]] + 'hundred'
+    if number[1] == '0' and number[2] != '0':
+        name += 'and' + below_ten(number[2])
+    elif number[1] != '0':
+        name += 'and' + below_hundred(number[1:])
     return name
 
 
